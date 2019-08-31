@@ -1,4 +1,4 @@
-FROM sameersbn/postgresql:latest
+FROM sameersbn/postgresql:9.6-4
 # ORIGINAL MAINTAINER machiel.van.ampting@trivento.nl
 
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
