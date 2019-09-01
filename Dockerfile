@@ -9,6 +9,11 @@ ENV MAVEN_HOME /opt/maven
 #Install Java.
 #Install maven
 #Install git
+
+apt-get install python-software-properties
+add-apt-repository ppa:webupd8team/java
+apt-get update
+
 RUN apt-get clean && apt-get update && DEBIAN_FRONTEND=noninteractive apt-get --fix-missing -y --force-yes --no-install-recommends install software-properties-common && \
     add-apt-repository -y ppa:webupd8team/java && \
     echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
